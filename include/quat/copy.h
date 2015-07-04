@@ -6,4 +6,11 @@
  * @returns {quat} out
  * @function
  */
-module.exports = require('gl-vec4/copy')
+#ifndef __quat_copy__
+#define __quat_copy__
+
+#include <vec4/copy.h>
+
+#define quat_copy vec4_copy
+
+#endif

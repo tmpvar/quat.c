@@ -7,4 +7,11 @@
  * @returns {quat} out
  * @function
  */
-module.exports = require('gl-vec4/scale')
+#ifndef __quat_scale__
+#define __quat_scale__
+
+#include <vec4/scale.h>
+
+#define quat_scale vec4_scale
+
+#endif

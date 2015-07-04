@@ -6,4 +6,11 @@
  * @returns {quat} out
  * @function
  */
-module.exports = require('gl-vec4/normalize')
+#ifndef __quat_normalize__
+#define __quat_normalize__
+
+#include <vec4/normalize.h>
+
+#define quat_normalize vec4_normalize
+
+#endif

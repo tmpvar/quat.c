@@ -9,4 +9,11 @@
  * @returns {quat} out
  * @function
  */
-module.exports = require('gl-vec4/set')
+#ifndef __quat_set__
+#define __quat_set__
+
+#include <vec4/set.h>
+
+#define quat_set vec4_set
+
+#endif

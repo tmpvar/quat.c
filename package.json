@@ -1,26 +1,22 @@
 {
-  "name": "gl-quat",
-  "version": "1.0.0",
-  "description": "gl-matrix's quaternion, split into smaller pieces",
+  "name": "quat.c",
+  "version": "0.0.0",
+  "description": "gl-matrix's quaternion, in c, split into smaller pieces",
   "main": "index.js",
   "scripts": {
-    "get-docs": "cat *.js | dox --api"
+    "test": "test/build.sh"
   },
   "dependencies": {
-    "gl-mat3": "^1.0.0",
-    "gl-vec3": "^1.0.3",
-    "gl-vec4": "^1.0.0"
-  },
-  "devDependencies": {
-    "dox": "git://github.com/hughsk/dox#api-context"
+    "vec3.c": "^1.1.1",
+    "vec4.c": "^1.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stackgl/gl-quat.git"
+    "url": "git://github.com/tmpvar/quat.c.git"
   },
   "license": {
     "type": "Zlib",
-    "url": "http://github.com/stackgl/gl-quat/blob/master/LICENSE.md"
+    "url": "http://github.com/tmpvar/quat.c/blob/master/LICENSE.md"
   },
   "contributors": [
     "Brandon Jones <tojiro@gmail.com>",
@@ -43,8 +39,8 @@
     "vector",
     "maths"
   ],
-  "homepage": "https://github.com/stackgl/gl-quat",
+  "homepage": "https://github.com/tmpvar/quat.c",
   "bugs": {
-    "url": "https://github.com/stackgl/gl-quat/issues"
+    "url": "https://github.com/tmpvar/quat.c/issues"
   }
 }

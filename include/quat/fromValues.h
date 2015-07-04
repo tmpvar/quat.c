@@ -8,4 +8,11 @@
  * @returns {quat} a new quaternion
  * @function
  */
-module.exports = require('gl-vec4/fromValues')
+#ifndef __quat_fromValues__
+#define __quat_fromValues__
+
+#include <vec4/fromValues.h>
+
+#define quat_fromValues vec4_fromValues
+
+#endif

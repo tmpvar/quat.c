@@ -6,4 +6,11 @@
  * @returns {Number} dot product of a and b
  * @function
  */
-module.exports = require('gl-vec4/dot')
+#ifndef __quat_dot__
+#define __quat_dot__
+
+#include <vec4/dot.h>
+
+#define quat_dot vec4_dot
+
+#endif

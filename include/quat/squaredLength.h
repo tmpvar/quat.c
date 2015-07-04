@@ -5,4 +5,11 @@
  * @returns {Number} squared length of a
  * @function
  */
-module.exports = require('gl-vec4/squaredLength')
+#ifndef __quat_squaredLength__
+#define __quat_squaredLength__
+
+#include <vec4/squaredLength.h>
+
+#define quat_squaredLength vec4_squaredLength
+
+#endif

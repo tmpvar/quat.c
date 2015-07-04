@@ -5,4 +5,11 @@
  * @returns {quat} a new quaternion
  * @function
  */
-module.exports = require('gl-vec4/clone')
+#ifndef __quat_clone__
+#define __quat_clone__
+
+#include <vec4/clone.h>
+
+#define quat_clone vec4_clone
+
+#endif

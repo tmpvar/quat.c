@@ -5,4 +5,11 @@
  * @returns {Number} length of a
  * @function
  */
-module.exports = require('gl-vec4/length')
+#ifndef __quat_length__
+#define __quat_length__
+
+#include <vec4/length.h>
+
+#define quat_length vec4_length
+
+#endif
